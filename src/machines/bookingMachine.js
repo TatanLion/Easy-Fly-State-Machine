@@ -92,7 +92,7 @@ const bookingMachine = createMachine(
             actions: "cleanContext"
           }
         },
-        ...fillCountries // Le pasamos la maquina hijo
+        // ...fillCountries // Le pasamos la maquina hijo
       },
       tickets: {
         after:{ // Agregamos una transición con delay
