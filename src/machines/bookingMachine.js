@@ -98,11 +98,14 @@ const bookingMachine = createMachine(
         after:{ // Agregamos una transición con delay
           3000: {
             target: 'initial',
-            actions: 'cleanContext'
+            actions: 'cleanContext',
           }
         },
         on: {
-          FINISH: "initial",
+          FINISH: {
+            target: "initial",
+            actions: 'cleanContext',
+          },
         },
       },
       passengers: {
@@ -117,8 +120,9 @@ const bookingMachine = createMachine(
           },
           ADD: {
             target: "passengers",
-            actions: assign(({ context, event }) =>
-              context.passengers.push(event.newPassenger)
+            actions: assign({
+              passengers: ({context, event}) => [...context.passengers, event.newPassenger] 
+            }
             ),
           },
         },
@@ -132,8 +136,10 @@ const bookingMachine = createMachine(
         console.log("Imprimiendo desde la entrada en Search"),
       imprimirSalida: () => console.log("Imprimiendo salida desde el search"),
       cleanContext: assign({
-        selectedCountry: "",
-        passengers: [],
+        passengers: () => [],
+        selectedCountry: () => "",
+        countries: () => [],
+        error: () => ''
       }),
     },
     guards: { // Validador de la información
