@@ -2,9 +2,55 @@
 
 Este proyecto usa la líbreria xState la cual nos permite crear una maquina de estados, desde allí podemos generar la maquina y luego pegarla dentro del VsCode.
 
-- Link documentación `https://xstate.js.org/docs/`
+Simulando una aplicación básica de compra de vuelos y consultando países a una API 
 
-Esto se guardo en la ruta: `src/machines/bookingMachine.js`
+## Comenzando 🚀
+
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+
+Mira **[Deployment](https://easy-fly-state-machine-tatanlion.netlify.app/)** para conocer como desplegar el proyecto.
+
+### Pre-requisitos 📋
+
+_Realizar un git clone del proyecto_
+
+_Para HTTPS_
+```
+https://github.com/TatanLion/Easy-Fly-State-Machine.git
+```
+
+### Instalación 🔧
+
+_Se sugiere la instalación de [Git](https://git-scm.com/) y un editor de código de preferencia, en mi caso uso [VsCode](https://code.visualstudio.com/) para poder manipular y observar el proyecto_
+
+## Construido con 🛠️
+
+* HTML
+* CSS
+* JS
+* [xState](https://xstate.js.org/docs/)
+
+## Contribuyendo 🖇️
+
+Por favor lee el [CONTRIBUTING.md](https://github.com/TatanLion/Easy-Fly-State-Machine/tree/main) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+
+## Autores ✒️
+
+* **Jonathan Amaya** - *Ing Sistemas - Desarrollador Web* - [TatanLion](https://github.com/TatanLion)
+
+## Expresiones de Gratitud 🎁
+
+* Comenta a otros sobre este proyecto 📢
+* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
+* Da las gracias públicamente 🤓.
+* etc.
+
+---
+⌨️ con ❤️ por [TatanLion](https://github.com/TatanLion) 😊
+
+## Documentación proyecto
+
+La maquina se creo en la ruta: `src/machines/bookingMachine.js`
 
 ## Propiedades de los estados
 
